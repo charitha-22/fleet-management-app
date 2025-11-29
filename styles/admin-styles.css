@@ -1,0 +1,26 @@
+#container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 350px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+img{
+    width: 350px;
+    height: 120px;
+}
+.card button{
+    margin: 4px;
+    background-color: rgb(42, 42, 164);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.card div{
+    text-align: center;
+}

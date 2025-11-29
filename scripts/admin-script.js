@@ -37,11 +37,13 @@ function renderUI(vehicleData){
         card.classList = 'card';
 
         card.innerHTML = `
+        <div>
         <img src = ${ele.vehicleImage}> <br><br>
         <b>${ele.reg}</b><br>
         <b>${ele.cat}</b><br>
         <b>${ele.driver}</b><br>
         <b>${ele.avail}</b><br>
+        </div>
         `;
 
         let updatebtn = document.createElement('button');
