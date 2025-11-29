@@ -7,6 +7,24 @@
 </head>
 <body>
     <h2>Fleet Management</h2>
+    <!-- Navbar section -->
+    <select id="filterCategory">
+        <option value="all">ALL</option>
+        <option value="auto">Auto</option>
+        <option value="car">Car</option>
+        <option value="truck">Truck</option>
+        <option value="Bus">Bus</option>
+    </select>
+
+    <select id="filterAvail">
+        <option value="all">ALL</option>
+        <option value="available">Available</option>
+        <option value="unavailable">Unavailable</option>
+    </select>
+
+    <button onclick="clearFilter()">Clear Filter</button>
+
+    <hr>
 
     <h3>Add Fleet</h3>
     <input type="text" id="reg" placeholder="enter Reg No of vehicle"> <br><br>
@@ -14,7 +32,7 @@
         <option value="auto">Auto</option>
         <option value="car">Car</option>
         <option value="truck">Truck</option>
-        <option value="Bus">Truck</option>
+        <option value="Bus">Bus</option>
     </select><br><br>
     <input type="text" id="driver" placeholder="enter driver name"><br><br>
 

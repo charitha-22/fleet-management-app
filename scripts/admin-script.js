@@ -76,3 +76,23 @@ function renderUI(vehicleData){
         container.appendChild(card);
     });
 }
+
+document.getElementById('filterCategory').addEventListener('change',()=>{
+    applyFilter();
+})
+
+function applyFilter(){
+    let filteredCat = document.getElementById('filterCategory').value;
+    let filteredAvail = document.getElementById('filterAvail').value;
+
+    let filteredData = vehicleData.filter((data)=>{
+        return (filteredCat === "all" || data.cat === filteredCat) && (filteredAvail === "all" || data.avail === filteredAvail)
+    })
+    renderUI(filteredData);
+}
+
+function clearFilter(){
+    document.getElementById('filterCategory').value="all";
+    document.getElementById('filterAvail').value ="all";
+    renderUI(vehicleData);
+}
